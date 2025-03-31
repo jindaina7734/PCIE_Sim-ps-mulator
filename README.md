@@ -4,6 +4,7 @@ This is the black guy dancing and kissing and do romantic things that would prob
 ![image](https://github.com/user-attachments/assets/f7199155-064b-499b-8790-18deec4acc89)
 
 The scene unfolds with a Black man moving with an effortless, magnetic charm—a dance that blends fluidity and confidence, each step a celebration of self-expression. His gestures are bold yet tender, whether he’s twirling a partner or lost in the rhythm of the music, radiating joy that transcends stereotypes. When he leans in to kiss, it’s not a performative gesture but a genuine exchange of warmth, his laughter mingling with affection in a way that feels authentically human. These moments of romance aren’t just about fitting into societal ideals; they’re a reimagining of love and connection, rooted in confidence and vulnerability. By embracing his individuality while honoring shared cultural expressions of romance, he becomes a subtle rebel—proving that authenticity, in all its forms, is the most radical act of all.
+![image](https://github.com/user-attachments/assets/b5d2c3dd-792c-4fb7-a267-7717304f9098)
 
 ![image](https://github.com/user-attachments/assets/fa414a3a-eb52-4ab3-8d83-bce92f782beb)
 
