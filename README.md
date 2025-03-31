@@ -1,7 +1,11 @@
 # PCIE_Sim-ps-mulator
 This is the black guy dancing and kissing and do romantic things that would probably fit into the society repository.
 
+![image](https://github.com/user-attachments/assets/f7199155-064b-499b-8790-18deec4acc89)
+
 The scene unfolds with a Black man moving with an effortless, magnetic charm—a dance that blends fluidity and confidence, each step a celebration of self-expression. His gestures are bold yet tender, whether he’s twirling a partner or lost in the rhythm of the music, radiating joy that transcends stereotypes. When he leans in to kiss, it’s not a performative gesture but a genuine exchange of warmth, his laughter mingling with affection in a way that feels authentically human. These moments of romance aren’t just about fitting into societal ideals; they’re a reimagining of love and connection, rooted in confidence and vulnerability. By embracing his individuality while honoring shared cultural expressions of romance, he becomes a subtle rebel—proving that authenticity, in all its forms, is the most radical act of all.
+
+![image](https://github.com/user-attachments/assets/fa414a3a-eb52-4ab3-8d83-bce92f782beb)
 
 His movements are a dialogue between past and present—a choreography steeped in the rich traditions of Black expression, yet freshly minted for a world hungry for authenticity. Every spin and dip carries echoes of ancestral storytelling, where dance was a language of resistance and joy. But here, it’s also intimate, personal. When he kisses his partner, it’s not a fleeting moment captured for validation but a deliberate celebration of connection, defying the narrow scripts that often box in Black affection. His confidence isn’t arrogance; it’s unapologetic selfhood, a refusal to let society dictate how his love or artistry should look. In a world quick to fetishize or tokenize, his romance becomes radical—a quiet manifesto that says Black joy and tenderness are not exceptions to the norm but the standard by which all humanity should be measured.
 
