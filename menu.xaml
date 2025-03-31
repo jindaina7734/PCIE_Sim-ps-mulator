@@ -1,0 +1,172 @@
+﻿<Window x:Class="LoginApp.menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginApp"
+        mc:Ignorable="d"
+        Title="menu" Height="480" Width="950">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Header-->
+        <Grid Height="80" Background="White" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left side of header -->
+            <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center">
+                <Image Source="/Imagee/kouki.png" Height="80" Width="80" Margin="10,0,0,0" HorizontalAlignment="Left"/>
+                <StackPanel VerticalAlignment="Center" Margin="10,0,0,0">
+                    <TextBlock Text="Laser Cutting" FontSize="20" FontWeight="Bold" Foreground="Black"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="DateTimeTextBlock" FontSize="14" Foreground="Gray"/>
+                        <TextBlock Text="  |  Update: 1.00 : 2024-11-25" FontSize="14" Foreground="Gray"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Right side of header -->
+            <StackPanel Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0">
+                <Button Name="btnMain" Content="MAIN" Width="100" Background="#B71C1C" Foreground="White" Margin="5,0" 
+                        Style="{StaticResource RoundedButtonStyle}" Click="Button_Click"
+                        MouseEnter="Button_MouseEnterRed" MouseLeave="Button_MouseLeaveRed"/>
+                <Button Name="btnMenu" Content="MENU" Width="100" Background="#B71C1C" Foreground="White" Margin="5,0" 
+                        Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnterRed" MouseLeave="Button_MouseLeaveRed"/>
+                <Button Name="btnIO" Content="I/O" Width="100" Background="#B71C1C" Foreground="White" Margin="5,0" 
+                        Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnterRed" MouseLeave="Button_MouseLeaveRed"/>
+                <Button Name="btnLastLarm" Content="LAST LARM" Width="100" Background="#B71C1C" Foreground="White" Margin="5,0" 
+                        Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnterRed" MouseLeave="Button_MouseLeaveRed"/>
+                <Button Name ="btnExit" Width="50" Height="50" Content="X" Foreground="White" Background="Red" FontSize="20" 
+                        Margin="5,0" Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnterRed" MouseLeave="Button_MouseLeaveRed" Click="Button_Click_1"/>
+            </StackPanel>
+        </Grid>
+
+        <!--User in4-->
+        <Grid Height="60" Margin="10,0,10,0" Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource = "/Imagee/background1.png" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left side of user info grid-->
+            <Border Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" Grid.Column="0" CornerRadius="10">
+                <TextBlock Text="Main Menu" FontSize="34" FontWeight="Bold" Foreground="#B71C1C" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="3"/>
+            </Border>
+
+            <!-- Right side of user info grid -->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10" Grid.Column="1">
+                <Image Source="\Imagee\operator_icon.png" Height="40" Margin="0,0,10,0"/>
+                <StackPanel Margin="0,0,10,0">
+                    <TextBlock Text="admin" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock x:Name="UserInfoDateTimeTextBlock" Text="17:09:50 | 2025-03-07" FontSize="12" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,10,0">
+                    <Button Name="btnLogin" Content="Log in" Width="80" Background="#B71C1C" Foreground="White" Style="{StaticResource RoundedButtonStyle}" BorderThickness="1"
+                            MouseEnter="Button_MouseEnterRed" MouseLeave="Button_MouseLeaveRed"/>
+                    <Button Name="btnLogout" Content="Log out" Width="80" Background="#B71C1C" Foreground="White" Margin="10,0,0,0" Style="{StaticResource RoundedButtonStyle}"
+                            MouseEnter="Button_MouseEnterRed" MouseLeave="Button_MouseLeaveRed" Click="btnLogout_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <!--Main Menu-->
+        <Grid Margin="10,10,10,10" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--Buttons-->
+                <Button Name="btnTeachingMenu" Grid.Row="0" Grid.Column="0" Background="LightGray" Width="300" Height="60" Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeaveGray" Click="btnTeachingMenu_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Imagee/teaching_icon.png" Width="40" Margin="5"/>
+                        <TextBlock Text="Teaching Menu" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="btnMechanicalMenu" Grid.Row="0" Grid.Column="1" Background="LightGray" Width="300" Height="60" Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeaveGray">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Imagee/mechanical_icon.png" Width="40" Margin="5"/>
+                        <TextBlock Text="Mechanical Menu" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="btnSystemMenu" Grid.Row="1" Grid.Column="0" Background="LightGray" Width="300" Height="60" Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeaveGray">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Imagee/system_icon.png" Width="40" Margin="5"/>
+                        <TextBlock Text="System Menu" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="btnManualOperation" Grid.Row="1" Grid.Column="1" Background="LightGray" Width="300" Height="60" Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeaveGray">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Imagee/manual_icon.png" Width="40" Margin="5"/>
+                        <TextBlock Text="Manual Operation" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="btnStatusMenu" Grid.Row="2" Grid.Column="0" Background="LightGray" Width="300" Height="60" Style="{StaticResource RoundedButtonStyle}"
+                    MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeaveGray">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Imagee/status_icon.png" Width="40" Margin="5"/>
+                        <TextBlock Text="Status Menu" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="btnModel" Grid.Row="2" Grid.Column="1" Background="LightGray" Width="300" Height="60" Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeaveGray">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Imagee/model_icon.png" Width="40" Margin="5"/>
+                        <TextBlock Text="Model" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="btnSuperUser" Grid.Row="3" Grid.Column="0" Background="LightGray" Width="300" Height="60" Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeaveGray">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Imagee/superuser_icon.png" Width="40" Margin="5"/>
+                        <TextBlock Text="Super User Menu" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="btnCameraSetting" Grid.Row="3" Grid.Column="1" Background="LightGray" Width="300" Height="60" Style="{StaticResource RoundedButtonStyle}"
+                        MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeaveGray">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Imagee/camerasetting_icon.png" Width="40" Margin="5"/>
+                        <TextBlock Text="Camera Setting" FontSize="16" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
